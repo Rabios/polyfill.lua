@@ -1,0 +1,17 @@
+return {
+  _NAME = "polyfill.lua",
+  _URL = "https://github.com/Rabios/polyfill.lua",
+  _LICENSE = "MIT (X11)",
+  _CODENAME = "polyfill.lua",
+  _AUTHOR = "Rabia Alhaffar",
+  _VERSION = "1.0",
+  _BRANCH = "master",
+  _APP = false,
+  description = "polyfill.lua, Polyfills for Lua and LuaJIT in one file!",
+  lib = {
+    src = {
+      "polyfill.lua"
+    },
+	main = "polyfill.lua"
+  }
+}
