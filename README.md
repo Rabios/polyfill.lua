@@ -35,6 +35,14 @@ local polyfill = require("polyfill")       --> Load the polyfills for Lua
 print(table.unpack({ 1, 2, 3, 4, 5, 6 }))  --> Use table.unpack (If you use LuaJIT this function is polyfilled)
 ```
 
+### Installing with cherry
+
+You could install `polyfill.lua` as [cherry](https://github.com/Rabios/cherry) package!
+
+```
+cherry add Rabios/polyfill.lua D:\cherry-proj
+```
+
 ### Resources
 
 I got some inspiration from these projects when worked on `polyfill.lua` on my own!
