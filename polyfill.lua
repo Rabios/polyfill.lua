@@ -25,6 +25,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ]]
 
+-- require
+if (not require) and package then
+  require = function(p)
+    if package.loaded[p] then
+      return package.loaded[p]
+    else
+      return package.searchpath(p, "./?/?.lua;./?.lua;./?.lc;./"..package.loaddir.."/?/init.lua"..";./"..package.loaddir.."/?.lua")
+    end
+  end
+end
+
 local polyfill = {
   _VERSION = 0.1,
   _AUTHOR = "Rabia Alhaffar (steria773/@Rabios)",
@@ -483,17 +494,6 @@ end
 -- rawsettable
 if not rawsettable then
   rawsettable = rawset
-end
-
--- require
-if (not require) and package then
-  require = function(p)
-    if package.loaded[p] then
-      return package.loaded[p]
-    else
-      return package.searchpath(p, "./?/?.lua;./?.lua;./?.lc;./"..package.loaddir.."/?/init.lua"..";./"..package.loaddir.."/?.lua")
-    end
-  end
 end
 
 -- debug.debug
