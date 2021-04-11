@@ -12,9 +12,9 @@ Polyfills for Lua and LuaJIT in one file!
 
 ### Modules
 
-- `ffi` module
 - Standard Functions
-- `table` module
+- `ffi` module
+- `table` module (Including table functions from both [Corona SDK](https://coronalabs.com)/[Solar2D](https://solar2d.com) and [Amulet](https://amulet.xyz) and working well!)
 - `os` module
 - `math` module
 - `io` module

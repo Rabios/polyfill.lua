@@ -117,6 +117,29 @@ table.foreach(t, f)
 table.foreachi(t, f)
 ```
 
+### module: table (Solar2D/Corona SDK)
+
+```lua
+table.indexOf(arr, elem)
+table.copy(...)
+```
+
+### module: table (Amulet)
+
+```lua
+table.search(arr, elem)
+table.clear(t)
+table.remove_all(arr, elem)
+table.append(t1, t2)
+table.merge(t1, t2)
+table.keys(t)
+table.values(t)
+table.count(t)
+table.filter(t, f)
+table.tostring(t)
+table.shuffle(t, r)
+```
+
 ## module: os
 
 ```lua
